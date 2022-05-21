@@ -17,9 +17,9 @@ class hp
 };
 void hp::getdata()
 {  
-   cout<<"\n enter the no. of students";
+   cout<<"\n enter the no. of students: ";
    cin>>n1;
-   cout<<"\n enter the marks";
+   cout<<"\n enter the marks: ";
    for(i=0;i<n1;i++)
    {   cin>>x;
        insert1(heap,x);
@@ -68,12 +68,12 @@ void hp::upadjust2(int heap1[20],int i)
 }
 void hp::minmax()
 {
-   cout<<"\n max marks"<<heap[1];
-   cout<<"\n##";
+   cout<<"\n max marks-->"<<heap[1];
+   cout<<"\n**************";
    for(i=0;i<=n1;i++)
    {   cout<<"\n"<<heap[i];  }
-   cout<<"\n min marks"<<heap1[1];
-   cout<<"\n##";
+   cout<<"\n min marks-->"<<heap1[1];
+   cout<<"\n**************";
    for(i=0;i<=n1;i++)
    {   cout<<"\n"<<heap1[i];  }
 }
